@@ -12,11 +12,19 @@
         <h2>Enter Numbers</h2> <br>
         <input id="num1" type="number" placeholder="first number"><br> <br>
         <input id="num2" type="number" placeholder="second number"><br> <br>
-        <button onclick="topla()">SUM</button><br>
-         <h1 id="result"></h1>
+        <button onclick="topla()">SUM</button><br> <br> <br>
+         <h3 id="result"></h1>
     </div>
     <script>
-
+     
+        function topla() {
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+             let topla = n1 + n2;
+             document.getElementById("result").innerText = "result: " + topla;
+            
+        }
+    
     </script>
 </body>
 </html>
